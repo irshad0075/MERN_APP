@@ -172,7 +172,7 @@ const updateOrder = async(req, res) => {
     const update = { Status, Message };
 
     try {
-        await connect(process.env.MONGO_URL);
+        await connect(process.env.MONGO_URI);
         await Order.findOneAndUpdate(filter, update, { new: true });
         const orders = await Order.find();
         res.json({
