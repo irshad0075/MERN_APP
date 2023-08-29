@@ -324,7 +324,7 @@
    :------------------------- | 
  | This API returns a list of all ORDERS 
   
-<<<<<<< HEAD
+
   
  #### Get Order by ID
 **HTTP Request**
